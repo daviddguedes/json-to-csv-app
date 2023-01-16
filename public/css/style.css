@@ -1,0 +1,8 @@
+body {
+  background-color: #f9f9f9;
+}
+
+#main > div {
+  width: 50%;
+  margin: 0 auto;
+}

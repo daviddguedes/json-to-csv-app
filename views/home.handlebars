@@ -1,0 +1,16 @@
+<div>
+  <h1>JSON to CSV</h1>
+
+  <form action="/" method="POST">
+    <textarea id="json-to-csv" name="json_to_csv" rows="30" style="width: 100%">{{filecontent}}</textarea>
+    <hr />
+    <button type="submit">Convert</button>
+
+    {{#if success}}
+      <p>Success!</p>
+    {{else}}
+      <p>{{{ error }}}</p>
+    {{/if}}
+
+  </form>
+</div>
