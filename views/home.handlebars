@@ -4,13 +4,20 @@
   <form action="/" method="POST">
     <textarea id="json-to-csv" name="json_to_csv" rows="30" style="width: 100%">{{filecontent}}</textarea>
     <hr />
-    <button type="submit">Convert</button>
+    <div>
+      <button type="submit">JSON to CSV</button>
+      <button id="btnReset" type="button" style="float: right;">Reset</button>
 
-    {{#if success}}
+      {{#if success}}
+      <button type="button" id="btnDownloadCsv">Download CSV</button>
       <p>Success!</p>
-    {{else}}
+      <a href id="linkToDownload" style="display: none;">.</a>
+      {{else}}
       <p>{{{ error }}}</p>
-    {{/if}}
+      {{/if}}
+
+    </div>
 
   </form>
+
 </div>
