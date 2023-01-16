@@ -1,5 +1,5 @@
 # json-to-csv-app
-A app to convert JSON/CSV.
+An app to convert JSON/CSV.
 
 # Installation
 
