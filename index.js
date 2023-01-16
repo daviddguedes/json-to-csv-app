@@ -34,5 +34,5 @@ app.post('/', (req, res) => {
 });
 
 app.listen(8888, () => {
-  console.log(`http://localhost:8888`);
+  console.log(`Go to http://localhost:8888`);
 });
